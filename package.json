@@ -5,6 +5,7 @@
   "author": "Xie Yuheng",
   "devDependencies": {
     "ava": "^2.4.0",
+    "mustache": "^3.1.0",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
