@@ -3,7 +3,7 @@
 - what is recorder?
 - what is record?
 # db
-- redis with time
+- in memory
 # user
-- login 
+- login
 - long time record
