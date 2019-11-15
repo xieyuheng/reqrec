@@ -1,5 +1,7 @@
 # Forealla
 
+A http request recorder in PHP.
+
 ## Community
 
 - We enforce C4 as collaboration protocol.

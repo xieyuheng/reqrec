@@ -1,7 +1,3 @@
-- clone postbin in php
-- clone postbin in nodejs
-- clone postbin in python
-- clone postbin in rust
 - post in memory
 - post and and persistence
 - login
