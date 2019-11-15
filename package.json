@@ -4,12 +4,13 @@
   "license": "GPL-3.0-or-later",
   "author": "Xie Yuheng",
   "devDependencies": {
-    "ava": "^1.4.1",
-    "parcel-bundler": "^1.12.3"
+    "ava": "^2.4.0",
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "express": "^4.17.0",
-    "express-session": "^1.16.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "ms": "^2.1.2",
     "pg": "^7.12.1"
   }
 }
