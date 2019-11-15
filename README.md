@@ -1,6 +1,6 @@
 # Forealla
 
-A http request recorder in PHP.
+A Hypertext Transfer Protocol (HTTP) request recorder in PHP.
 
 ## Community
 
