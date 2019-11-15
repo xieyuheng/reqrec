@@ -19,6 +19,12 @@ function bin_req($bin_id, $req) {
     return $req_id;
 }
 
+function bin_req_query($bin_id, $req, $query) {
+    $url = "https://postb.in/$bin_id?$query";
+    $req_id = file_get_contents($url, false, stream_context_create($req));
+    return $req_id;
+}
+
 function bin_get($bin_id, $req_id) {
     $url = "https://postb.in/api/bin/$bin_id/req/$req_id";
     $req = [

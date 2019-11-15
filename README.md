@@ -1,6 +1,6 @@
 # Forealla
 
-A [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) request recorder in PHP.
+A [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) request recorder.
 - More about HTTP at [Mozilla Developer web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP).
 
 ## Community
