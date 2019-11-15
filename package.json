@@ -1,0 +1,15 @@
+{
+  "name": "forealla",
+  "version": "0.0.1",
+  "license": "GPL-3.0-or-later",
+  "author": "Xie Yuheng",
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "express": "^4.17.0",
+    "express-session": "^1.16.1",
+    "pg": "^7.12.1"
+  }
+}
