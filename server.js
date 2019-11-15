@@ -15,16 +15,6 @@ const app = require("./lib/app.js")
 const server = http.createServer()
 server.on("request", app)
 
-class subst_t {
-  constructor() {
-    this.map = new Map;
-  }
-}
-
-let st = new subst_t()
-
-console.log(st)
-
 server.listen(env.port, () => {
   console.log("Listening on port %s", env.port)
 })
