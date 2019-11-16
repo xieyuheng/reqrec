@@ -1,10 +1,10 @@
+- [record] fix headers
 # frontend
 # test
 - [test] [maybe] require("request")
 # api
 - be restful
 ## record
-- [record] fix headers
 - [record] delete
 - [record] time as part of id
 - [record] time field
@@ -13,6 +13,7 @@
 - [request] time
 - [request] delete
 # docs
+- [docs] api
 # db
 - [db] clean up expiry
 # user

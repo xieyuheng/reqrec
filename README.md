@@ -3,7 +3,8 @@
 A [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) **Req**uest **Rec**order.
 - Kept simple for web learner.
   - More about HTTP at [Mozilla Developer web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP).
-- Inspired by https://gitlab.com/webdev.sh/postb.in
+- Inspired by https://postb.in
+  - [Source](https://gitlab.com/webdev.sh/postb.in)
 
 ## Usage
 
