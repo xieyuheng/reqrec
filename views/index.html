@@ -10,16 +10,19 @@
     <pre>
 record_id: {{record_id}}
 
-# Send a request to the record:
+# Send a GET request to the record from browser:
+<a href="{{self_url}}/api/records/{{record_id}}">{{self_url}}/api/records/{{record_id}}</a>
+
+# View the recorded requests in browser:
+<a href="{{self_url}}/records/{{record_id}}">{{self_url}}/records/{{record_id}}</a>
+
+# Send POST a request to the record from command line:
 curl -d '{ "name": "Cicada" }' \
   -H "Content-Type: application/json" \
    "{{self_url}}/api/records/{{record_id}}"
 
 # Get the recorded requests:
 curl "{{self_url}}/api/records/{{record_id}}/requests"
-
-# View the recorded requests in browser:
-<a href="{{self_url}}/records/{{record_id}}">{{self_url}}/records/{{record_id}}</a>
     </pre>
 
   </body>
