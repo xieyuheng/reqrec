@@ -10,13 +10,13 @@
     <pre>
 record_id: {{record_id}}
 
-# try:
-curl -d '{ "name": "Yoda" }' \
+# Send a request to the record:
+curl -d '{ "name": "Cicada" }' \
   -H "Content-Type: application/json" \
-   "{{self_url}}/records/{{record_id}}"
+   "{{self_url}}/api/records/{{record_id}}"
 
-# view the recorded requests
-curl "{{self_url}}/records/{{record_id}}/requests"
+# Get the recorded requests:
+curl "{{self_url}}/api/records/{{record_id}}/requests"
     </pre>
 
   </body>
