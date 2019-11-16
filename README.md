@@ -3,6 +3,10 @@
 A [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) **Req**uest **Rec**order.
 - More about HTTP at [Mozilla Developer web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP).
 
+## API
+
+- Inspired by https://gitlab.com/webdev.sh/postb.in
+
 ## Community
 
 - We enforce C4 as collaboration protocol.
