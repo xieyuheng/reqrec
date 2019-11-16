@@ -7,6 +7,17 @@
     <title>{{title}}</title>
   </head>
   <body>
-    ReqRec!
+    <pre>
+record_id: {{record_id}}
+
+# try:
+curl -d '{ "name": "Yoda" }' \
+  -H "Content-Type: application/json" \
+   "{{self_url}}/records/{{record_id}}"
+
+# view the recorded requests
+curl "{{self_url}}/records/{{record_id}}/requests"
+    </pre>
+
   </body>
 </html>
