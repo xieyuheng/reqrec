@@ -9,7 +9,6 @@ A [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_T
 
 Prepare:
 - `npm install`
-
 Run:
 - `node server.js`
 
