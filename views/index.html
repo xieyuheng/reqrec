@@ -12,18 +12,21 @@
 record_id: {{record_id}}
 
 # Send a GET request to the record from browser:
-<a href="{{self_url}}/api/records/{{record_id}}">{{self_url}}/api/records/{{record_id}}</a>
-
-# View the recorded requests in browser:
 <a href="{{self_url}}/records/{{record_id}}">{{self_url}}/records/{{record_id}}</a>
+
+# View the raw recorded requests in browser:
+<a href="{{self_url}}/records/{{record_id}}/raw">{{self_url}}/records/{{record_id}}/raw</a>
 
 # Send POST a request to the record from command line:
 curl -d '{ "name": "Cicada" }' \
   -H "Content-Type: application/json" \
-   "{{self_url}}/api/records/{{record_id}}"
+  "{{self_url}}/records/{{record_id}}"
 
-# Get the recorded requests:
+# Get the recorded requests from command line:
 curl "{{self_url}}/api/records/{{record_id}}/requests"
+
+# Delete the record from command line:
+curl -X DELETE "{{self_url}}/api/records/{{record_id}}"
     </pre>
 
   </body>

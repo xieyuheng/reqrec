@@ -4,7 +4,6 @@
 # api
 - be restful
 ## record
-- [record] delete
 - [record] time as part of id
 - [record] time field
 ## request
