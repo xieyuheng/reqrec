@@ -1,10 +1,12 @@
-# db
-- db clean
 # record
+- [router] records
 - time as part of id
 - time field
 # request
-- body
+- body text
+- [router] requests
+# db
+- db clean
 # user
 - login
 - long time record
