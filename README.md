@@ -5,6 +5,14 @@ A [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_T
   - More about HTTP at [Mozilla Developer web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP).
 - Inspired by https://gitlab.com/webdev.sh/postb.in
 
+## Usage
+
+Prepare:
+- `npm install`
+
+Run:
+- `node server.js`
+
 ## Community
 
 - We enforce C4 as collaboration protocol.
