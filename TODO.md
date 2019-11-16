@@ -1,9 +1,10 @@
-# ontology
-- what is http?
-- what is recorder?
-- what is record?
 # db
-- in memory
+- db clean
+# record
+- time as part of id
+- time field
+# request
+- body
 # user
 - login
 - long time record
