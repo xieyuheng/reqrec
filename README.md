@@ -7,10 +7,8 @@ A [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_T
 
 ## Usage
 
-Prepare:
-- `npm install`
-Run:
-- `node server.js`
+- Prepare: `npm install`
+- Run: `node server.js`
 
 ## Community
 
