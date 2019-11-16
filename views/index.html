@@ -4,28 +4,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>{{title}}</title>
+    <title>{{pkg.title}}</title>
   </head>
   <body>
     <pre>
-# A record is created for you:
+# ReqRec
+
+A Hypertext Transfer Protocol (HTTP) <b>Req</b>uest <b>Rec</b>order.
+- Source code: <a href="{{pkg.repository.url}}">{{pkg.repository.url}}</a>
+
+## A record is created for you:
 record_id: {{record_id}}
 
-# Send a GET request to the record from browser:
+# Usage
+
+## Send a GET request to the record from browser:
 <a href="{{self_url}}/records/{{record_id}}">{{self_url}}/records/{{record_id}}</a>
 
-# View the raw recorded requests in browser:
+## View the raw recorded requests in browser:
 <a href="{{self_url}}/records/{{record_id}}/raw">{{self_url}}/records/{{record_id}}/raw</a>
 
-# Send POST a request to the record from command line:
+## Send POST a request to the record from command line:
 curl -d '{ "name": "Cicada" }' \
   -H "Content-Type: application/json" \
   "{{self_url}}/records/{{record_id}}"
 
-# Get the recorded requests from command line:
+# API
+
+## Get the recorded requests from command line:
 curl "{{self_url}}/api/records/{{record_id}}/requests"
 
-# Delete the record from command line:
+## Delete the record from command line:
 curl -X DELETE "{{self_url}}/api/records/{{record_id}}"
     </pre>
 
