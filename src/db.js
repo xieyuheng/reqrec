@@ -1,6 +1,6 @@
-"use strict"
+'use strict'
 
-const nanoid = require("nanoid")
+const nanoid = require('nanoid')
 
 class db_t {
 

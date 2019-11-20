@@ -1,6 +1,6 @@
-"use strict"
+'use strict'
 
-const assert = require("assert")
+const assert = require('assert')
 
 /**
  * left close, right open integer interval.

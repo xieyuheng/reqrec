@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
     <title>{{pkg.title}}</title>
   </head>
   <body>
@@ -11,7 +11,7 @@
 # ReqRec
 
 A Hypertext Transfer Protocol (HTTP) <b>Req</b>uest <b>Rec</b>order.
-- Source code: <a href="{{pkg.repository.url}}">{{pkg.repository.url}}</a>
+- Source code: <a href='{{pkg.repository.url}}'>{{pkg.repository.url}}</a>
 
 ## A record is created for you:
 record_id: {{record_id}}
@@ -19,23 +19,23 @@ record_id: {{record_id}}
 # Usage
 
 ## Send a GET request to the record from browser:
-<a href="{{self_url}}/records/{{record_id}}">{{self_url}}/records/{{record_id}}</a>
+<a href='{{self_url}}/records/{{record_id}}'>{{self_url}}/records/{{record_id}}</a>
 
 ## View the raw recorded requests in browser:
-<a href="{{self_url}}/records/{{record_id}}/raw">{{self_url}}/records/{{record_id}}/raw</a>
+<a href='{{self_url}}/records/{{record_id}}/raw'>{{self_url}}/records/{{record_id}}/raw</a>
 
 ## Send POST a request to the record from command line:
 curl -d '{ "name": "Cicada" }' \
-  -H "Content-Type: application/json" \
-  "{{self_url}}/records/{{record_id}}"
+  -H 'Content-Type: application/json' \
+  '{{self_url}}/records/{{record_id}}'
 
 # API
 
 ## Get the recorded requests from command line:
-curl "{{self_url}}/api/records/{{record_id}}/requests"
+curl '{{self_url}}/api/records/{{record_id}}/requests'
 
 ## Delete the record from command line:
-curl -X DELETE "{{self_url}}/api/records/{{record_id}}"
+curl -X DELETE '{{self_url}}/api/records/{{record_id}}'
     </pre>
 
   </body>

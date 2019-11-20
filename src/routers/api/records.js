@@ -1,15 +1,15 @@
-"use strict"
+'use strict'
 
-const express = require("express")
+const express = require('express')
 
-const pkg = require("../../../package.json")
-const util = require("../../util.js")
+const pkg = require('../../../package.json')
+const util = require('../../util.js')
 
 let router = express.Router()
 
-router.route("/")
+router.route('/')
   .post((req, res) => {
-    let db = req.app.get("db")
+    let db = req.app.get('db')
     let record_id = db.record_create()
     console.log(`create record_id: ${record_id}`)
     res.status(201)
@@ -19,19 +19,19 @@ router.route("/")
   })
 
 
-router.route("/:record_id")
+router.route('/:record_id')
   .delete((req, res) => {
-    let record_id = req.params["record_id"]
-    let db = req.app.get("db")
+    let record_id = req.params['record_id']
+    let db = req.app.get('db')
     db.record_delete(record_id)
     console.log(`delete record_id: ${record_id}`)
-    res.json({ msg: "record deleted" })
+    res.json({ msg: 'record deleted' })
   })
 
-router.route("/:record_id/requests")
+router.route('/:record_id/requests')
   .get((req, res) => {
-    let record_id = req.params["record_id"]
-    let db = req.app.get("db")
+    let record_id = req.params['record_id']
+    let db = req.app.get('db')
     let record_map = db.record_get(record_id)
     if (record_map) {
       console.log(`show record_id: ${record_id}`)
