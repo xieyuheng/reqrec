@@ -1,11 +1,11 @@
 'use strict'
 
-const express = require('express')
+const Router = require('express-promise-router')
 
 const pkg = require('../../package.json')
 const util = require('../util.js')
 
-let router = express.Router()
+let router = Router()
 
 router.route('/:record_id')
   .all((req, res) => {

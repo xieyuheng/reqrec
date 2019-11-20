@@ -1,11 +1,11 @@
 'use strict'
 
-const express = require('express')
+const Router = require('express-promise-router')
 
 const pkg = require('../../package.json')
 const env = require('../env.js')
 
-let router = express.Router()
+let router = Router()
 
 router.route('/')
   .get((req, res) => {
