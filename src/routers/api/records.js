@@ -9,8 +9,8 @@ let router = express.Router()
 
 router.route('/')
   .post((req, res) => {
-    let db = req.app.get('db')
-    let record_id = db.record_create()
+    let rrdb = req.app.get('rrdb')
+    let record_id = rrdb.record_create()
     console.log(`create record_id: ${record_id}`)
     res.status(201)
     res.json({
@@ -22,8 +22,8 @@ router.route('/')
 router.route('/:record_id')
   .delete((req, res) => {
     let record_id = req.params['record_id']
-    let db = req.app.get('db')
-    db.record_delete(record_id)
+    let rrdb = req.app.get('rrdb')
+    rrdb.record_delete(record_id)
     console.log(`delete record_id: ${record_id}`)
     res.json({ msg: 'record deleted' })
   })
@@ -31,8 +31,8 @@ router.route('/:record_id')
 router.route('/:record_id/requests')
   .get((req, res) => {
     let record_id = req.params['record_id']
-    let db = req.app.get('db')
-    let record_map = db.record_get(record_id)
+    let rrdb = req.app.get('rrdb')
+    let record_map = rrdb.record_get(record_id)
     if (record_map) {
       console.log(`show record_id: ${record_id}`)
       res.json(util.map2obj(record_map))

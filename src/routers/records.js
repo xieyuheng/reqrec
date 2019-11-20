@@ -10,8 +10,8 @@ let router = express.Router()
 router.route('/:record_id')
   .all((req, res) => {
     let record_id = req.params['record_id']
-    let db = req.app.get('db')
-    let record_map = db.record_get(record_id)
+    let rrdb = req.app.get('rrdb')
+    let record_map = rrdb.record_get(record_id)
     if (record_map) {
       let request_value = {
         method: req.method,
@@ -21,7 +21,7 @@ router.route('/:record_id')
         query: req.query,
         body: req.body,
       }
-      let request_id = db.request_create(record_id, request_value)
+      let request_id = rrdb.request_create(record_id, request_value)
       console.log(`create request_id: ${request_id}`)
       res.json({
         request_id: request_id,
@@ -37,8 +37,8 @@ router.route('/:record_id')
 router.route('/:record_id/raw')
   .get((req, res) => {
     let record_id = req.params['record_id']
-    let db = req.app.get('db')
-    let record_map = db.record_get(record_id)
+    let rrdb = req.app.get('rrdb')
+    let record_map = rrdb.record_get(record_id)
     if (record_map) {
       console.log(`show record_id: ${record_id}`)
       res.set('Content-Type', 'text/html')

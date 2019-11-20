@@ -2,7 +2,7 @@
 
 const nanoid = require('nanoid')
 
-class db_t {
+class rrdb_t {
 
   constructor() {
     this.record_map = new Map()
@@ -44,5 +44,5 @@ class db_t {
 }
 
 module.exports = {
-  db_t
+  rrdb_t
 }
