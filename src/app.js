@@ -15,7 +15,7 @@ const app = express()
 
 app.engine("html", mustache_express())
 app.set("view engine", "html")
-app.set("views", path.join(__dirname, "..", "views"))
+app.set("views", path.join(__dirname, "views"))
 
 app.set("db", new db_t())
 
