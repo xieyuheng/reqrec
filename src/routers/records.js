@@ -5,7 +5,7 @@ const Router = require('express-promise-router')
 const pkg = require('../../package.json')
 const util = require('../util.js')
 
-let router = Router()
+let router = new Router()
 
 router.route('/:record_id')
   .all((req, res) => {
