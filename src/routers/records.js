@@ -1,9 +1,9 @@
 'use strict'
 
 const Router = require('express-promise-router')
+const basic = require('@cicadoidea/basic')
 
 const pkg = require('../../package.json')
-const util = require('../util.js')
 
 let router = new Router()
 
@@ -16,7 +16,7 @@ router.route('/:record_id').all((req, res) => {
       method: req.method,
       path: req.path,
       ip: req.ip,
-      headers: util.array2obj(req.rawHeaders),
+      headers: basic.array2obj(req.rawHeaders),
       query: req.query,
       body: req.body,
     }
@@ -40,7 +40,7 @@ router.route('/:record_id/raw').get((req, res) => {
   if (record_map) {
     console.log(`show record_id: ${record_id}`)
     res.set('Content-Type', 'text/html')
-    let json = JSON.stringify(util.map2obj(record_map), null, 2)
+    let json = JSON.stringify(basic.map2obj(record_map), null, 2)
     res.send(`<pre>${json}</pre>`)
   } else {
     res.status(400)

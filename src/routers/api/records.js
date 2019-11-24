@@ -1,9 +1,9 @@
 'use strict'
 
 const Router = require('express-promise-router')
+const basic = require('@cicadoidea/basic')
 
 const pkg = require('../../../package.json')
-const util = require('../../util.js')
 
 let router = new Router()
 
@@ -32,7 +32,7 @@ router.route('/:record_id/requests').get((req, res) => {
   let record_map = rrdb.record_get(record_id)
   if (record_map) {
     console.log(`show record_id: ${record_id}`)
-    res.json(util.map2obj(record_map))
+    res.json(basic.map2obj(record_map))
   } else {
     res.status(400)
     res.json({ msg: `can not find record_id: ${record_id}` })
