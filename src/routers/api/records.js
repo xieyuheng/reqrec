@@ -1,7 +1,7 @@
 'use strict'
 
 const Router = require('express-promise-router')
-const basic = require('@cicadoidea/basic')
+const basic = require('@cicadoidea/basic/lib/util')
 
 const pkg = require('../../../package.json')
 
