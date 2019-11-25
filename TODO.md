@@ -1,7 +1,8 @@
-- a good nodejs architecture
-
-- create router from service
+# a good nodejs architecture
+- req.session.context
+- validator
 - use webdev/lib
+- create router from service
 # frontend
 # test
 - [test] [maybe] require("request")
