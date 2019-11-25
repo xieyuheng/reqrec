@@ -1,4 +1,7 @@
 - a good nodejs architecture
+
+- create router from service
+- use webdev/lib
 # frontend
 # test
 - [test] [maybe] require("request")

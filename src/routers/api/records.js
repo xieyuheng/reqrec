@@ -10,13 +10,12 @@ let router = new Router()
 
 router.route('/').post(async (req, res) => {
   let service = new record_create_t()
-  let data = await service.run()
-  let record_id = data.record_id
+  let { data } = await service.run()
 
-  console.log(`create record_id: ${record_id}`)
+  console.log(`create record_id: ${data.record_id}`)
   res.status(201)
   res.json({
-    record_id: record_id,
+    record_id: data.record_id,
   })
 })
 
@@ -35,14 +34,14 @@ router.route('/:record_id/requests').get(async (req, res) => {
   let record_id = req.params['record_id']
 
   let service = new record_list_t()
-  let record_map = await service.run({ record_id })
+  let { data, msg } = await service.run({ record_id })
 
-  if (record_map) {
+  if (data) {
     console.log(`show record_id: ${record_id}`)
-    res.json(record_map)
+    res.json(data.record_map)
   } else {
     res.status(400)
-    res.json({ msg: `can not find record_id: ${record_id}` })
+    res.json({ msg })
   }
 })
 

@@ -11,7 +11,7 @@ class record_create_t extends service_t {
     let record_id = rrdb.record_create()
 
     return {
-      record_id: record_id,
+      data: { record_id }
     }
   }
 }

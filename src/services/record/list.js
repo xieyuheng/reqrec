@@ -11,9 +11,17 @@ class record_list_t extends service_t {
   async execute(the) {
     let record_map = rrdb.record_get(the.record_id)
 
-    return record_map
-      ? util.map2obj(record_map)
-      : undefined
+    if (record_map) {
+      return {
+        data: {
+          record_map: util.map2obj(record_map)
+        }
+      }
+    } else {
+      return {
+        msg: `can not find record_id: ${the.record_id}`
+      }
+    }
   }
 }
 

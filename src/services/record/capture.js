@@ -13,7 +13,7 @@ class record_capture_t extends service_t {
     if (record_map) {
       let request_id = rrdb.request_create(the.record_id, the.request_value)
       return {
-        request_id: request_id,
+        data: { request_id }
       }
     } else {
       return {
