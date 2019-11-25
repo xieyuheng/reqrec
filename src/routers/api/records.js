@@ -2,9 +2,9 @@
 
 const Router = require('express-promise-router')
 
-const { record_create_t } = require('../../services/record/create.js')
-const { record_list_t } = require('../../services/record/list.js')
-const { record_delete_t } = require('../../services/record/delete.js')
+const { record_create_t } = require('../../services/record/create')
+const { record_list_t } = require('../../services/record/list')
+const { record_delete_t } = require('../../services/record/delete')
 
 let router = new Router()
 

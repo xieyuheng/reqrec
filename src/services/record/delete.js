@@ -1,4 +1,4 @@
-const { service_t } = require('../../service.js')
+const { service_t } = require('../../service')
 
 const rrdb = require('../../rrdb')
 

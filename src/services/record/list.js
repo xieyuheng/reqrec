@@ -1,5 +1,5 @@
 const util = require('@cicadoidea/basic/lib/util')
-const { service_t } = require('../../service.js')
+const { service_t } = require('../../service')
 
 const rrdb = require('../../rrdb')
 

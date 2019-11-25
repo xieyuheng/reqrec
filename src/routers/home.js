@@ -2,9 +2,9 @@
 
 const Router = require('express-promise-router')
 
-const env = require('../env.js')
+const env = require('../env')
 
-const { record_create_t } = require('../services/record/create.js')
+const { record_create_t } = require('../services/record/create')
 
 let router = new Router()
 

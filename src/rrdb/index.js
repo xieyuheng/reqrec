@@ -1,4 +1,4 @@
-const { rrdb_t } = require('./rrdb.js')
+const { rrdb_t } = require('./rrdb')
 
 let rrdb = new rrdb_t()
 

@@ -3,8 +3,8 @@
 const Router = require('express-promise-router')
 const util = require('@cicadoidea/basic/lib/util')
 
-const { record_list_t } = require('../services/record/list.js')
-const { record_capture_t } = require('../services/record/capture.js')
+const { record_list_t } = require('../services/record/list')
+const { record_capture_t } = require('../services/record/capture')
 
 let router = new Router()
 
