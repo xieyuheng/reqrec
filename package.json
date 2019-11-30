@@ -16,7 +16,8 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "@cicadoidea/basic": "0.0.3",
+    "@cicadoidea/basic": "0.0.6",
+    "@cicadoidea/webdev": "0.0.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-promise-router": "^3.0.3",
