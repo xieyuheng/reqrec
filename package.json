@@ -19,7 +19,7 @@
     "@cicadoidea/basic": "0.0.6",
     "@cicadoidea/webdev": "0.0.1",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-promise-router": "^3.0.3",
     "express-session": "^1.17.0",
     "ms": "^2.1.2",
